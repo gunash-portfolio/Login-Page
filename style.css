@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.fullpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.signin{
+    background-color: #e8e8e8;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup{
+    width: 50%;
+    height: 100vh;
+    background-color: #212121;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #e8e8e8;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    transform: translateY(-7px);
+   }
+   
+   .input:focus {
+    outline-color: #e8e8e8;
+    background: #e8e8e8;
+    box-shadow: inset 20px 20px 60px #c5c5c5,
+           inset -20px -20px 60px #ffffff;
+    transition: 0.3s;
+    transform: translateY(-7px);
+   }
+
+
+  .input1{
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #212121;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    transform: translateY(-7px);
+  }
+  .input1:focus {
+    outline-color: #e8e8e8;
+    background: #212121;
+    box-shadow: inset 20px 20px 60px #c5c5c5,
+           inset -20px -20px 60px #ffffff;
+    transition: 0.3s;
+    transform: translateY(-7px);
+   } 
+
+   .space{
+    margin-top: 5px;
+   }
+
+   .button {
+    padding: 1.3em 5em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #e8e8e8;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .button1{
+    padding: 1.3em 5em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #e8e8e8;
+    background-color: #212121;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .button:hover {
+    background:#e8e8e8;
+    box-shadow: 5px 5px 15px #c5c5c5,
+           -5px -5px 15px #ffffff;
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  .button:active {
+    transform: translateY(-1px);
+  }
+
+  .button1:hover{
+    background:#212121;
+    box-shadow: 5px 5px 15px #212121,
+           -5px -5px 15px #000;
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  .button1:active {
+    transform: translateY(-1px);
+  }
+
+  .fonts{
+    padding: 10px;
+    font-family: 'Tilt Prism', cursive;
+  }
+
+  .signinh2{
+    padding-top: 10px;
+    color: #e8e8e8;
+  }
+
+  @media (max-width: 599.92px) {
+    .fullpage{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+  }
+    .container{
+      width: 100%;
+      margin: 0 auto;
+  }
+    .signin{
+      background-color: #e8e8e8;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .signup{
+    width: 100%;
+    height: 100vh;
+    background-color: #212121;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  }
+  @media (min-width: 600px) and (max-width: 991.92px) {
+        .fullpage{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+  }
+    .container{
+      width: 100%;
+      margin: 0 auto;
+  }
+    .signin{
+      background-color: #e8e8e8;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .signup{
+    width: 100%;
+    height: 100vh;
+    background-color: #212121;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.button {
+  padding: 1.3em 5em;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #e8e8e8;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.button:hover {
+  background:#e8e8e8;
+  box-shadow: 5px 5px 15px #c5c5c5,
+         -5px -5px 15px #ffffff;
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.button:active {
+  transform: translateY(-1px);
+}
+
+.button1{
+  padding: 1.3em 5em;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #e8e8e8;
+  background-color: #212121;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+.button1:hover{
+  background:#212121;
+  box-shadow: 5px 5px 15px #212121,
+         -5px -5px 15px #000;
+  color: #fff;
+  transform: translateY(-7px);
+}
+.button1:active {
+  transform: translateY(-1px);
+}
+.input {
+  border: none;
+  padding: 1.5rem 4.5rem;
+  border-radius: 1.5rem;
+  background-color: #e8e8e8;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  transform: translateY(-7px);
+ }
+ 
+ .input:focus {
+  outline-color: #e8e8e8;
+  background: #e8e8e8;
+  box-shadow: inset 20px 20px 60px #c5c5c5,
+         inset -20px -20px 60px #ffffff;
+  transition: 0.3s;
+  transform: translateY(-7px);
+ }
+
+.input1{
+  border: none;
+  padding: 1.5rem 4.5rem;
+  border-radius: 1.5rem;
+  background-color: #212121;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  transform: translateY(-7px);
+}
+.input1:focus {
+  outline-color: #e8e8e8;
+  background: #212121;
+  box-shadow: inset 20px 20px 60px #c5c5c5,
+         inset -20px -20px 60px #ffffff;
+  transition: 0.3s;
+  transform: translateY(-7px);
+ } 
+  }
+  @media (min-width: 992px) {
+  }

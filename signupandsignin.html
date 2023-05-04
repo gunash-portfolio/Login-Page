@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+    <div class="bg">
+      <div class="container">
+        <div class="fullpage">
+          <div class="signup">
+            <h2 class="fonts signinh2">Sign Up</h2>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              class="input"
+              placeholder="Username"
+            />
+            <input
+              type="text"
+              name="password"
+              class="input space"
+              placeholder="Password"
+              id="password"
+            />
+            <input type="submit" id= "btn" class="button" value="Sign Up" />
+          </div>
+          <div class="signin">
+            <h2 class="fonts">Sign In</h2>
+            <input type="text" id="username2" class="input1" placeholder="Username" />
+            <input type="text"id="password2" class="input1 space" placeholder="Password" />
+            <input type="submit" id= "btn2" class="button1" value="Sign In" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let username = document.getElementById("username");
+      let password = document.getElementById("password");
+      let username2 = document.getElementById("username2");
+      let password2 = document.getElementById("password2");
+      let btn = document.getElementById("btn");
+      let btn2 = document.getElementById("btn2");
+      let users = [{
+        username: "gunesh",
+        password: "333"
+      }]
+      let signup = ()=>{
+      // console.log(typeof(users));
+      
+      let obj = {
+        username: username.value,
+        password: password.value,
+      }
+      
+      users.push(obj);
+      }
+      btn.addEventListener("click",signup);
+
+let sigin = () =>{
+  if(users.find(e => e.username===username2.value))
+  {
+    if(users.find(e => e.password===password2.value))
+  {
+    console.log("Logged");
+   
+  }
+  else{
+    console.log("!!!");
+  }
+  }
+  else{
+    console.log("!!!");
+  }
+  
+}
+btn2.addEventListener("click",sigin);
+    </script>
+  </body>
+</html>
